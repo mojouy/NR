@@ -1,3 +1,6 @@
+.animated {
+  transition: all .2s ease-in; }
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -72,6 +75,12 @@ font-default {
   font-weight: normal;
   font-style: normal; }
 
+section {
+  width: 100%; }
+  section.tree {
+    height: 1000px;
+    background-image: url(../img/layout/tree_green_gradient.svg), url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8cmFkaWFsR3JhZGllbnQgaWQ9Imc3NTIiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiBjeD0iNTAlIiBjeT0iNy44NTcxNDI4NTcxNDI4NTclIiByPSI5NC40OTMyODM2NDU1MTY1OCUiPgo8c3RvcCBzdG9wLWNvbG9yPSIjQzg5QzdFIiBvZmZzZXQ9IjAiLz48c3RvcCBzdG9wLWNvbG9yPSIjODU0OTYxIiBvZmZzZXQ9IjAuNCIvPjxzdG9wIHN0b3AtY29sb3I9IiM0MDFENDUiIG9mZnNldD0iMC43NSIvPjxzdG9wIHN0b3AtY29sb3I9IiMyNzEyMzciIG9mZnNldD0iMSIvPgo8L3JhZGlhbEdyYWRpZW50Pgo8cmVjdCB4PSItNTAiIHk9Ii01MCIgd2lkdGg9IjEwMSIgaGVpZ2h0PSIxMDEiIGZpbGw9InVybCgjZzc1MikiIC8+Cjwvc3ZnPg==); }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -137,22 +146,6 @@ font-default {
 /* All Mobile Sizes (devices and browser) */
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-/* #Font-Face
-================================================== */
-/* 	This is the proper syntax for an @font-face file
-		Just create a "fonts" folder at the root,
-		copy your FontName into code below and remove
-		comment brackets */
-/*	@font-face {
-	    font-family: 'FontName';
-	    src: url('../fonts/FontName.eot');
-	    src: url('../fonts/FontName.eot?iefix') format('eot'),
-	         url('../fonts/FontName.woff') format('woff'),
-	         url('../fonts/FontName.ttf') format('truetype'),
-	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
-	    font-weight: normal;
-	    font-style: normal; }
-*/
 @media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */ }
 /* ==========================================================================
